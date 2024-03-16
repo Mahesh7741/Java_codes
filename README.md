@@ -26,8 +26,5 @@ Feel free to explore the different directories to access code examples and solut
 
 We welcome contributions from the community to enhance and expand the repository. If you have any Java code examples, improvements, or suggestions, feel free to open a pull request. Together, we can create a valuable resource for Java developers worldwide.
 
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
 
 Happy coding! 🚀
