@@ -25,6 +25,10 @@ public class stringBasic {
         // System.out.println(name.length());
 
         //Substring 
-        System.out.println(name.substring(0));
+        // System.out.println(name.substring(0));
+        // System.out.println(name.substring(0,3));
+
+        System.out.println(name.indexOf("M"));
+        
     }
 }
