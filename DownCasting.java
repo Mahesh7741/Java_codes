@@ -19,6 +19,6 @@ public class DownCasting {
         Animal animal = new Dog();
         // animal.bark();
         Dog dog = (Dog) animal;
-        // dog.bark();
+        dog.bark();
     }
 }
