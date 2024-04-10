@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class BinaryRepresentationOfNextNumber {
     // public static void main(String arg[]){

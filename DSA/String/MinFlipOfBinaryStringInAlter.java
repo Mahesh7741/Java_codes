@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class MinFlipOfBinaryStringInAlter {
     public static void main(String arg[]) {

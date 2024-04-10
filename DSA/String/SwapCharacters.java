@@ -1,4 +1,4 @@
-package DSA.String;
+
 public class SwapCharacters{
     public static void main(String arg[]){
         String str="ABCDEFGH";

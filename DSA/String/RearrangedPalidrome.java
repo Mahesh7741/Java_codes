@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class RearrangedPalidrome {
     public static boolean isStringPalidromAfterRearranged(String str){

@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class InsertCharacterAtPosition {
     public static void main(String arg[]){

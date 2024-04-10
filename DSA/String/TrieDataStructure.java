@@ -1,4 +1,4 @@
-package DSA.String;
+
 class TrieNode {
     TrieNode[] children;
     boolean isEndOfWord;

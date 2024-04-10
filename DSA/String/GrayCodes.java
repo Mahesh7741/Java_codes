@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class GrayCodes {
     public static void main(String arg[]){

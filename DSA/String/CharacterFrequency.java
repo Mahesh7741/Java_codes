@@ -1,4 +1,3 @@
-package DSA.String;
 
 public class CharacterFrequency {
     static int MAX=26;

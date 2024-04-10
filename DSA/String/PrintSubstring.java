@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class PrintSubstring{
     public static void main(String arg[]){

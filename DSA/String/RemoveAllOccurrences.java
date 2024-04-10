@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class RemoveAllOccurrences {
     public static void main(String[] args){

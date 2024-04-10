@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class PatternSearching {
     // static void search(String pat, String txt)

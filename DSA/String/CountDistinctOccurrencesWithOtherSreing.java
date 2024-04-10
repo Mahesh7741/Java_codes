@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class CountDistinctOccurrencesWithOtherSreing {
     public static int countDistinctOccurrences(String S, String T) {

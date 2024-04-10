@@ -1,4 +1,4 @@
-package DSA.String;
+
 import java.util.Arrays;
 
 public class SortString {

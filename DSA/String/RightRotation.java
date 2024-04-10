@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class RightRotation {
     public static void main(String arg[]) {

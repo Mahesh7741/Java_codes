@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class CheckStringIsSame {
     public static void main(String arg[]){

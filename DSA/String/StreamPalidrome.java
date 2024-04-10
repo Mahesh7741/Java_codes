@@ -1,4 +1,4 @@
-package DSA.String;
+
 
 public class StreamPalidrome {
     public static void main(String args[]){
