@@ -1,0 +1,20 @@
+how to run java on terminal
+
+command lines : 
+
+step 1 : 
+
+javac <file_name.java>
+
+
+step 2 : 
+
+java <file_name>
+ 
+
+................................................................
+
+or 
+
+java <file_name.java>
+
