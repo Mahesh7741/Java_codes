@@ -1,48 +1,54 @@
 package DSA.Tree;
 
+
 class Node{
     int data;
     Node left;
     Node right;
+
     public Node(int data){
-        this.data = data;
+        this.data=data;
+        left=right=null;
     }
 }
 
 
-class BinaryTree{
+
+public class BinaryTree {
     Node root;
-    public void insert(int data){
-        insertRec(root, data);
+    public BinaryTree(){
+        root=null;
     }
-    public Node insertRec(Node root, int data){
+    public void insert(int data){
+        root=insertRec(root, data);
+    }
+    public Node insertRec(Node root,int data){
         if(root==null){
-            root = new Node(data);
+            root=new Node(data);
+            return root;
         }
         else if(root.data>data){
-            root.left=insertRec(root, data);
+            root.left=insertRec(root.left, data);
         }
         else if(root.data<data){
-            root.right=insertRec(root, data);
+            root.right=insertRec(root.right, data);
         }
         return root;
     }
+
     public void inOrder(){
         inOrderRec(root);
     }
+
     public void inOrderRec(Node root){
-         if(root!=null){
-            inOrderRec(root.left); 
-            System.out.println(root.data+" ");
+        if(root != null){
+            System.out.print(root.data+" ");
+            inOrderRec(root.left);
             inOrderRec(root.right);
-         }
+        }
     }
-}
 
-
-  
-public class TreeImple {
-    public static void main(String []args) {
+    public static void main(String []args){
         BinaryTree tree = new BinaryTree();
         tree.insert(8);
         tree.insert(7);
