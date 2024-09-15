@@ -12,6 +12,6 @@ public class SystemOfEquation{
 			}
 		}
 		System.out.println(count);
-		sc.close();
+		sc.close();	
 	}
 }
