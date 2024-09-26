@@ -54,24 +54,24 @@ class Trie {
 }
 
 public class PrefixScores {
-    public int[] sumPrefixScores(String[] strings) { // Fix: Accept an array of strings
+    public int[] sumPrefixScores(String[] strings) { 
         Trie trie = new Trie();
         for (String str : strings) {
-            trie.insert(str); // Insert each string into the Trie
+            trie.insert(str); 
         }
         
-        int[] ans = new int[strings.length]; // Array to hold results
+        int[] ans = new int[strings.length];
         for (int i = 0; i < strings.length; i++) {
-            ans[i] = trie.checkPrefixCount(strings[i]); // Get the prefix count for each string
+            ans[i] = trie.checkPrefixCount(strings[i]); 
         }
         return ans; // Return the results array
     }
 
     public static void main(String[] args) {
         PrefixScores ps = new PrefixScores();
-        String[] strings = {"a","ab","abc","cab"}; // Sample input
+        String[] strings = {"a","ab","abc","cab"}; 
         int[] result = ps.sumPrefixScores(strings);
         
-        System.out.println(Arrays.toString(result)); // Output the result
+        System.out.println(Arrays.toString(result)); 
     }
 }
