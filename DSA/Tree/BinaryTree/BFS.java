@@ -1,16 +1,5 @@
 import java.util.*;
-
-class Node {
-    int data;
-    Node left;
-    Node right;
-
-    public Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
+import NodePackages.Node;
 
 public class BFS {
     static Scanner sc;
