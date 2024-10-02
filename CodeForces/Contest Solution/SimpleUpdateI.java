@@ -1,50 +1,30 @@
-import java.util.*;
-
+import java.util.Scanner;
 public class SimpleUpdateI {
+    // Solve for one test case
+    public static void solve(Scanner sc) {
+        int n = sc.nextInt(); // Length of the string
+        int k = sc.nextInt(); // The parameter k
+        String s = sc.next(); // The binary string
 
-    public static int countOnes(String s, int n, int k) {
-        int maxCountOnes = 0;
+        // Count number of '1's in the string
+        int cnt = s.length() - s.replace("1", "").length();
 
-        // Iterate over all possible valid positions for 'i'
-        for (int i = k; i <= n - k; i++) {
-            StringBuilder str = new StringBuilder(s);
+        // Calculate the maximum of current '1's and n - k
+        int maxi = Math.max(cnt, n - k);
 
-            // Update the previous k elements (s[i-k+1] to s[i]) to '1'
-            for (int j = i - k; j <= i - 1; j++) {
-                str.setCharAt(j, '1');
-            }
-
-            // Update the next k elements (s[i+1] to s[i+k]) to '0', ensuring we stay in bounds
-            for (int l = i; l < Math.min(i + k, n); l++) {
-                str.setCharAt(l, '0');
-            }
-
-            // Count the number of '1's in the updated string
-            int ones = 0;
-            for (int m = 0; m < n; m++) {
-                if (str.charAt(m) == '1') {
-                    ones++;
-                }
-            }
-
-            // Update maxCountOnes to the maximum count of '1's encountered so far
-            maxCountOnes = Math.max(maxCountOnes, ones);
-        }
-
-        return maxCountOnes;
+        // Output the result for this test case
+        System.out.println(maxi);
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        FastReader sc = new FastReader();
         int t = sc.nextInt(); // Number of test cases
+
+        // Process each test case
         while (t-- > 0) {
-            int n = sc.nextInt(); // Length of the string
-            int k = sc.nextInt(); // The parameter k
-            sc.nextLine(); // Consume the leftover newline
-            String s = sc.nextLine(); // The binary string
-            int result = countOnes(s, n, k); // Calculate the result
-            System.out.println(result); // Output the result
+            solve(sc);
         }
+
         sc.close();
     }
 }
