@@ -18,7 +18,7 @@ public class GoldMedal {
                 sum += sc.nextLong();
             }
             long additionalValue = sc.nextLong();
-            int result = (sum + additionalValue) / k;
+            long result = (sum + additionalValue) / k;
             System.out.println(result);
         }
         sc.close();
