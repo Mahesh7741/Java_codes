@@ -1,5 +1,5 @@
 // Working program using Reader Class
-import java.io.DataInputStream;
+import java.io.DataStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
