@@ -8,7 +8,3 @@ public class DominoPilling{
 		int n=sc.nextInt();
 		int m=sc.nextInt();
 		int result=dominoPailling(n,m);
-		System.out.println(result);
-		sc.close();
-	}
-}
