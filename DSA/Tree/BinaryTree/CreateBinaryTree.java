@@ -1,4 +1,4 @@
-package NodePackages; // Use the same package as Node
+package NodePackages; 
 
 import java.util.Scanner;
 

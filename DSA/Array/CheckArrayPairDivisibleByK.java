@@ -54,43 +54,36 @@ public class CheckArrayPairDivisibleByK {
 
     public static boolean checkPairDivisibleByK(int[] arr, int k) {
         int size = arr.length;
-
-        // If array has odd number of elements, we cannot form pairs
         if (size % 2 != 0) {
-            return false;
+            return false; 	 	
         }
-
-        // Frequency array to store remainder frequencies
         int[] freq = new int[k];
 
-        // Fill the frequency array with the remainders
         for (int i = 0; i < size; i++) {
             int remainder = arr[i] % k;
-            if (remainder < 0) { // Handle negative remainders
+            if (remainder < 0) { 
                 remainder += k;
             }
             freq[remainder]++;
         }
 
-        // Check pairs for remainder 0 (elements divisible by k)
         if (freq[0] % 2 != 0) {
-            return false; // Elements with remainder 0 must be paired among themselves
+            return false; 
         }
 
-        // Check pairs for other remainders
         for (int i = 1; i <= k / 2; i++) {
-            if (i == k - i) { // Special case when remainder is k/2 (only if k is even)
+            if (i == k - i) { 
                 if (freq[i] % 2 != 0) {
-                    return false; // Elements with remainder k/2 must be paired among themselves
+                    return false; 
                 }
             } else {
                 if (freq[i] != freq[k - i]) {
-                    return false; // Frequency of remainder i must match remainder k-i
+                    return false; 
                 }
             }
         }
 
-        return true; // All pairs can be formed
+        return true; 
     }
 
     public static void main(String[] args) {
