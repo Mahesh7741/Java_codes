@@ -12,6 +12,7 @@ public class Matching{
                 if (s.charAt(i) == '?') ans *= 10;
             }
             System.out.println(ans);
+			
         }
     }
 }
