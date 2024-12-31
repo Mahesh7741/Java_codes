@@ -14,7 +14,7 @@ public class WeNeedTheZero {
 
             if (xOR == 0) {
                 System.out.println(0);
-            } else if (n % 2 == 1) {
+            } else if (n % 2 == 1) {			
                 System.out.println(xOR);
             } else {
                 System.out.println(-1);
