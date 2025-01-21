@@ -4,6 +4,7 @@ public class Hashset{
 	public static void main(String[] args){
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
+		@SuppressWarnings("unchecked")
 		HashSet<Integer>[] days=new HashSet[n];
 		for(int i=0;i<n;i++) days[i]=new HashSet<>();
 		
