@@ -11,7 +11,7 @@ public class FindMinimumOperations  {
             long k = sc.nextLong();
             int operations = 0;
 			if(n==1){
-				return 
+				return ;
 			}
         }
         
