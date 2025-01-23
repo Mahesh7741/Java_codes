@@ -4,32 +4,18 @@ public class IncreasingSequence{
 	public static void main(String[] args){
 		int n = sc.nextInt();
 		int d = sc.nextInt();
-		List<Integer> v = new ArrayList<>();
-		for(int i = 0; i < n; i++) {
-			v.add(sc.nextInt());
-		}
-		int ct = 0;
+		int b0 = sc.nextInt();
+		int moves = 0;
 		for(int i = 1; i < n; i++) {
-			if(v.get(i) <= v.get(i - 1)) {
-				int x = v.get(i - 1) - v.get(i);
-				if(x == 0) {
-					v.set(i, v.get(i) + d);
-					ct++;
-				} else if(x % d == 0) {
-					int y = x / d;
-					ct += y;
-					v.set(i, v.get(i) + y * d);
-				} else {
-					int y = (x / d) + 1;
-					ct += y;
-					v.set(i, v.get(i) + y * d);
-				}
-			}
-			if(v.get(i) == v.get(i - 1)) {
-				v.set(i, v.get(i) + d);
-				ct++;
+			int b = sc.nextInt();
+			if(b <= b0) {
+				int x = (b0 - b) / d + 1;
+				moves += x;
+				b0 = b + x * d;
+			} else {
+				b0 = b;
 			}
 		}
-		System.out.println(ct);
+		System.out.println(moves);
 	}
 }
