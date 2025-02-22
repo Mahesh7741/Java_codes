@@ -7,6 +7,7 @@ public class LongLong {
         int n = sc.nextInt();
         List<Long> v = new ArrayList<>();
         
+		
         for (int i = 0; i < n; i++) {
             long x = sc.nextLong();
             if (x != 0) v.add(x);
