@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class ThreeActivities {
+	
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
